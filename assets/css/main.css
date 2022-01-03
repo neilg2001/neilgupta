@@ -2299,9 +2299,11 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
+		/* cursor: default; */
 		list-style: none;
 		padding-left: 0;
+		padding-top: 10;
+
 	}
 
 		ul.icons li {
@@ -2817,7 +2819,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+		  /* background-color: #85144b; */
+			/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/neil.jpg"); */
+			/* background-image: url("images/neil.jpg"); */
 			color: #c8ece9;
 		}
 
