@@ -2090,7 +2090,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
 	.image {
 		border-radius: 3px;
 		border: 0;
@@ -4023,8 +4022,10 @@ input, select, textarea {
 	  width: 100%;
 	  display: flex;
 		padding: 50px 0;
-	  /*align-items: center; */
-	  /* justify-content: center; */
+		position: relative;
+	  align-items: center;
+	  justify-content: center;
+		/* display: grid; */
 	}
 	.timeline{
 		width: 80%;
@@ -4123,9 +4124,97 @@ input, select, textarea {
 		.timeline ul li:hover{
 			background-color: #CACACA;
 		}
+		/* .timeline-content-left{
+			transform: translate(50%, -50%);
+			right: -30px;
+		} */
+		/* .timeline-content-right{
+			transform: translate(-50%, -50%);
+			left: -30px;
+		} */
 
 		.timeline-content .date{
 			position: absolute;
 			top: -30px;
+		}
+
+		.logos{
+			width: 80%;
+			height: auto;
+			/* max-width: 800px;
+			max-height: 1500px; */
+			margin: 0 auto;
+			position: absolute;
+			align-items: center;
+			flex-grow: 1;
+			/* overflow: auto; */
+			left: 200px;
+			bottom: -200px;
+		}
+
+		.timeline{
+			width: 80%;
+			height: auto;
+			/* max-width: 800px;
+			max-height: 1500px; */
+			margin: 0 auto;
+			position: relative;
+			align-items: center;
+			flex-grow: 1;
+			/* overflow: auto; */
+/* right: -350px; */
+
+		}
+
+		.logos ul{
+			list-style: none;
+		}
+
+		.logos li{
+			width: 50%;
+			margin-bottom: 150px;
+			position: relative;
+			border-radius: 50%;
+		}
+
+		.logos ul li{
+			width: 50%;
+			margin-bottom: 150px;
+			position: relative;
+			border-radius: 50%;
+
+		}
+		.logos ul li: last-child{
+			margin-bottom: 0;
+		}
+
+		.logos ul li:nth-child(odd){
+			transform: translate(40%, -40%);
+			/* right: -20px; */
+
+		}
+
+		.logos ul li:nth-child(even){
+			transform: translate(-40%, -40%);
+			/* left: -20px; */
+		}
+
+		.logo{
+			width: 40%;
+			/* margin-bottom: 150px; */
+			position: relative;
+			border-radius: 50%;
+			right: -200px;
+			bottom: -20px;
+
+		}
+
+		.logo-left{
+			width: 50%;
+			margin-bottom: 150px;
+			position: relative;
+			border-radius: 50%;
+			/* transform: translate(-50%, -50%); */
+			left: -30px;
 		}
 	}
