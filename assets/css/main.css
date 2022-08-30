@@ -2132,6 +2132,20 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			@media screen and (max-width: 390px) {
+				.image {
+					padding-right: 85px;
+					display: flex;
+					margin-left: -8px;
+					margin-top: 10px;
+					padding-top: 20px;
+
+				}
+
+				}
+
+			}
+
 /* List */
 
 	ol {
@@ -4143,13 +4157,9 @@ input, select, textarea {
 			height: auto;
 			/* max-width: 800px;
 			max-height: 1500px; */
-			margin: 0 auto;
 			position: absolute;
-			align-items: center;
-			flex-grow: 1;
 			/* overflow: auto; */
-			left: 200px;
-			bottom: -200px;
+
 		}
 
 		.timeline{
@@ -4172,7 +4182,6 @@ input, select, textarea {
 
 		.logos li{
 			width: 50%;
-			margin-bottom: 150px;
 			position: relative;
 			border-radius: 50%;
 		}
@@ -4180,7 +4189,6 @@ input, select, textarea {
 		.logos ul li{
 			width: 50%;
 			margin-bottom: 150px;
-			position: relative;
 			border-radius: 50%;
 
 		}
@@ -4204,8 +4212,6 @@ input, select, textarea {
 			/* margin-bottom: 150px; */
 			position: relative;
 			border-radius: 50%;
-			right: -200px;
-			bottom: -20px;
 
 		}
 
