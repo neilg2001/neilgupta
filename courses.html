@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Gradient background */
+            background: linear-gradient(to right, #f3f3f3, #21b2a6);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 70%;
+            margin: auto;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+		li:hover {
+   			background-color: #ddd;
+		}
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <h1>My Courses</h1>
+    <div class="container">
+        <ul>
+			<li data-aos="fade-up" data-description="Web Systems Description" onclick="showDescription(this)"><strong>EECS 485:</strong> Web Systems</li>
+            <li data-aos="fade-up" data-description="Foundations of Computer Science Description" onclick="showDescription(this)"><strong>EECS 376:</strong> Foundations of Computer Science</li>
+            <li data-aos="fade-up" data-description="Web Systems Description" onclick="showDescription(this)"><strong>EECS 370::</strong> Computer Organization</li>
+            <li data-aos="fade-up" data-description="Foundations of Computer Science Description" onclick="showDescription(this)"><strong>EECS 281:</strong> Data Structures and Algorithms</li>
+			<li data-aos="fade-up" data-description="Web Systems Description" onclick="showDescription(this)"><strong>MATH 215:</strong> Multivariable Calculus</li>
+            <li data-aos="fade-up" data-description="Foundations of Computer Science Description" onclick="showDescription(this)"><strong>MATH 214:</strong> Linear Algebra</li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+		function showDescription(element) {
+            alert(element.getAttribute('data-description'));
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f3f3f3, #e9e9e9);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 70%;
+            margin: auto;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #ddd;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .description {
+            display: none;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <h1>My Courses</h1>
+    <div class="container">
+        <ul>
+            <li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>EECS 485:</strong> Web Systems
+                <div class="description">Concepts surrounding web systems, applications, and internet scale distributed systems. Topics covered include client/server protocols, security, information retrieval and search engines, scalable data processing, and fault tolerant systems. The course has substantial projects involving development of web applications and web systems.</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>EECS 376:</strong> Foundations of Computer Science
+                <div class="description">Introduction to theory of computation. Models of computation: finite state machines, Turing machines. Decidable and undecidable problems. Polynomial time computability and paradigms of algorithm design. computational complexity emphasizing NP-hardness. Coping with intractability. Exploiting intractability: cryptography</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>EECS 370:</strong> Computer Organization
+                <div class="description">Basic concepts of computer organization and hardware. Instructions executed by a processor and how to use these instructions in simple assembly-language programs. Stored-program concept. Data-path and control for multiple implementations of a processor. Performance evaluation, pipelining, caches, virtual memory, input/output.</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>EECS 281:</strong> Data Structures and Algorithms
+                <div class="description">Introduction to algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy. Several programming assignments.</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>MATH 215:</strong> Multivariable Calculus
+                <div class="description">The sequence Math 115-116-215 is the standard complete introduction to the concepts and methods of calculus. It is taken by the majority of students intending to concentrate in mathematics, science, or engineering as well as students heading for many other fields. The emphasis is on concepts and solving problems rather than theory and proof.</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>MATH 214:</strong> Linear Algebra
+                <div class="description">An introduction to matrices and linear algebra. This course covers the basics needed to understand a wide variety of applications that use the ideas of linear algebra, from linear programming to mathematical economics. The emphasis is on concepts and problem-solving. The sequence 214-215 is not for math majors. It is designed as an alternate to the sequence 215-216 for engineering students who need more linear algebra and less differential equations background.</div>
+            </li>
+            <!-- More courses... -->
+        </ul>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleDescription(element) {
+            var description = element.querySelector('.description');
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -4112,15 +4112,15 @@ input, select, textarea {
 		.timeline ul li:nth-child(odd){
 			float: left;
 			clear: right;
-			transform: translateX(-30px);
+			transform: translateX(-80px);
 		}
 		.timeline ul li:nth-child(even){
 			float: right;
 			clear: left;
-			transform: translateX(30px);
+			transform: translateX(80px);
 		}
 
-		.timeline ul li::after{
+		/* .timeline ul li::after{
 			content: '';
 			position: absolute;
 			height: 20px;
@@ -4128,17 +4128,17 @@ input, select, textarea {
 			border-radius: 50%;
 			background-color: white;
 			top: 0;
-		}
+		} */
 
-		.timeline ul li:nth-child(odd)::after{
+		/* .timeline ul li:nth-child(odd)::after{
 			transform: translate(50%, -50%);
-			right: -30px;
+			right: 0px;
 		}
 
 		.timeline ul li:nth-child(even)::after{
 			transform: translate(-50%, -50%);
-			left: -30px;
-		}
+			left: 0px;
+		} */
 
 		.timeline ul li:hover{
 			background-color: #CACACA;
