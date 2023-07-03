@@ -2147,9 +2147,8 @@ input, select, textarea {
 
 				}
 
-				}
-
 			}
+
 
 /* List */
 
@@ -2700,11 +2699,14 @@ input, select, textarea {
 			width: 30%;
 			height: 30%;
 			padding-left: 100px;
+
 		}
 
 			.spotlight .image img {
 				border-radius: 10;
 				width: 100%;
+
+			
 			}
 
 		.spotlight .content {
@@ -2764,19 +2766,23 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.75);
 		}
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			.spotlight .image {
 				width: 45%;
+				display: flex;
+                justify-content: center;
+                align-items: center;
+
 			}
 
 			.spotlight .content {
 				width: 55%;
 			}
 
-		}
+		} */
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 830px) {
 
 			.spotlight {
 				display: block;
@@ -2788,6 +2794,9 @@ input, select, textarea {
 
 				.spotlight .image {
 					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 
 				.spotlight .content {
@@ -2796,7 +2805,6 @@ input, select, textarea {
 					text-align: center;
 					width: 100%;
 				}
-
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3450,7 +3458,6 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
@@ -4066,9 +4073,7 @@ input, select, textarea {
 		margin-bottom: 20px;
 	}
 
-	.timeline ul li: last-child{
-		margin-bottom: 0;
-	}
+
 	.timeline-content p{
 		font-size: 16px;
 		line-height: 30px;
@@ -4170,15 +4175,10 @@ input, select, textarea {
 		.timeline{
 			width: 80%;
 			height: auto;
-			/* max-width: 800px;
-			max-height: 1500px; */
 			margin: 0 auto;
 			position: relative;
 			align-items: center;
 			flex-grow: 1;
-			/* overflow: auto; */
-/* right: -350px; */
-
 		}
 
 		.logos ul{
@@ -4197,9 +4197,9 @@ input, select, textarea {
 			border-radius: 50%;
 
 		}
-		.logos ul li: last-child{
+		/* .logos ul li: last-child{
 			margin-bottom: 0;
-		}
+		} */
 
 		.logos ul li:nth-child(odd){
 			transform: translate(40%, -40%);
