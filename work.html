@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(45deg, #cc2b5e, #753a88);
+      background-size: cover;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: #000000;
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .experience-item {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #060000;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .experience-item:hover {
+      transform: scale(1.05);
+    }
+
+    .company-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Work Experience!</h1>
+
+  <div class="experience-item" onclick="showDetails('PayPal')">
+    <img class="company-logo" src="paypal_logo.png" alt="PayPal Logo">
+    <!-- <h2>PayPal</h2> -->
+    <p>Position:<br> Software Engineer Intern</p>
+    <p>Duration:<br> June 2023 - Aug 2023 <br> May 2022 - Aug 2022 </p>
+  </div>
+
+  <div class="experience-item" onclick="showDetails('Womply')">
+    <img class="company-logo" src="womply_logo.png" alt="Womply Logo">
+    <p>Position:<br> Software Development Intern</p>
+    <p>Duration:<br> June 2021 - Aug 2021</p>
+  </div>
+
+  <div class="experience-item" onclick="showDetails('UIC Research')">
+    <img class="company-logo" src="uic_logo.png" alt="UIC Research Logo">
+    <p>Position:<br> Data Science <br>Intern</p>
+    <p>Duration:<br> June 2020 - Aug 2020<br></p>
+  </div>
+
+  <div class="experience-item" onclick="showDetails('iManage')">
+    <img class="company-logo" src="imanage_logo.png" alt="iManage Logo">
+    <p>Position:<br> Software Engineer <br>Intern</p>
+    <p>Duration:<br> June 2019 - Aug 2019</p>
+  </div>
+
+  <div id="detailsModal" class="hidden">
+    <div id="modalContent">
+      <h2 id="modalTitle"></h2>
+      <p id="modalPosition"></p>
+      <p id="modalDuration"></p>
+    </div>
+  </div>
+
+  <script>
+    // function showDetails(company) {
+    //   const modal = document.getElementById('detailsModal');
+    //   const modalTitle = document.getElementById('modalTitle');
+    //   const modalPosition = document.getElementById('modalPosition');
+    //   const modalDuration = document.getElementById('modalDuration');
+
+    //   // Set the modal content based on the selected company
+    //   modalTitle.textContent = company;
+    //   modalPosition.textContent = `Position: [Your Position at ${company}]`;
+    //   modalDuration.textContent = `Duration: [Your Duration at ${company}]`;
+
+    //   modal.classList.remove('hidden');
+    //   setTimeout(() => modal.classList.add('hidden'), 3000); // Hide the modal after 3 seconds (you can adjust the duration as desired)
+    // }
+  </script>
+</body>
+</html>
