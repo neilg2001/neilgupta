@@ -63,8 +63,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #f3f3f3, #e9e9e9);
-            color: #333;
+            background: linear-gradient(45deg, #614385, #516395);
+            color: #000000;
         }
         h1 {
             text-align: center;
@@ -78,11 +78,11 @@
         }
         li {
             padding: 10px 0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #333;
             cursor: pointer;
         }
         li:hover {
-            background-color: #ddd;
+            background-color: #c7afaf;
         }
         li:last-child {
             border-bottom: none;
@@ -91,7 +91,7 @@
             display: none;
             padding: 10px;
             font-size: 0.9em;
-            color: #666;
+            color: #000000;
         }
     </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -100,6 +100,7 @@
     <h1>My Courses</h1>
     <div class="container">
         <ul>
+            <h2>College Courses:</h2>
             <li data-aos="fade-up" onclick="toggleDescription(this)">
                 <strong>EECS 485:</strong> Web Systems
                 <div class="description">Concepts surrounding web systems, applications, and internet scale distributed systems. Topics covered include client/server protocols, security, information retrieval and search engines, scalable data processing, and fault tolerant systems. The course has substantial projects involving development of web applications and web systems.</div>
@@ -124,7 +125,20 @@
                 <strong>MATH 214:</strong> Linear Algebra
                 <div class="description">An introduction to matrices and linear algebra. This course covers the basics needed to understand a wide variety of applications that use the ideas of linear algebra, from linear programming to mathematical economics. The emphasis is on concepts and problem-solving. The sequence 214-215 is not for math majors. It is designed as an alternate to the sequence 215-216 for engineering students who need more linear algebra and less differential equations background.</div>
             </li>
-            <!-- More courses... -->
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul>
+            <h2>Personal Learning:</h2>
+            <li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>Quant Trading:</strong> Algorithmic Trading Like a Pro: Essential Python Course
+                <div class="description">Learning the foundations of algorithmic trading and building your own trading systems. Expanding trading edge by constructing own ideas quickly and testing in the real world..</div>
+            </li>
+			<li data-aos="fade-up" onclick="toggleDescription(this)">
+                <strong>Algorithmic Trading:</strong> Akuna Capital Options 101
+                <div class="description">Teaching the basics of options trading from the perspective of an options market-maker.</div>
+            </li>
         </ul>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

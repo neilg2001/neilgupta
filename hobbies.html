@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Hobbies!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(45deg, #D8B5FF, #1EAE98);
+        }
+
+        #bball1 {
+            height: 300px;
+
+        }
+
+
+
+
+        h1.title {
+            text-align: center;
+            padding: 1em;
+            background: linear-gradient(45deg, #D8B5FF, #1EAE98);
+        }
+
+        .hobby-section {
+            padding: 2em;
+            margin-bottom: 2em;
+            background: linear-gradient(45deg, #D8B5FF, #1EAE98);
+            border-radius: 5px;
+            visibility: hidden;
+        }
+
+        .hobby-section img {
+            max-width: 100%;
+        }
+
+        .hobby-section:nth-child(odd) {
+            margin-right: 20%;
+            text-align: left;
+
+        }
+
+        .hobby-section:nth-child(even) {
+            margin-right: 20%;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .fadeIn {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            visibility: visible !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">My Hobbies</h1>
+
+    <section id="basketball" class="hobby-section">
+        <h1>Basketball</h1>
+        <p>I love to watch and play basketball. I played varsity in highschool and am still looking to coach! </p>
+        <img src="bball1.jpg" id= "bball1" src="" alt="Me playing basketball">
+        <img src="b3.jpg" id= "bball1" src="" alt="Me playing basketball">
+        <img src="bball2.jpg" id= "bball1" src="" alt="Me playing basketball">
+
+    </section>
+
+    <section id="travel" class="hobby-section">
+        <h1>Travel</h1>
+        <p>I love to travel. Here is a glimpse of where I have been!.</p>
+        <img id="bball1" src="t1.jpg" alt="Me travelling">
+        <img id="bball1" src="t2.jpg" alt="Me travelling">
+
+    </section>
+<!-- 
+    <section id="golf" class="hobby-section">
+        <ul id="golf-facts"></ul>
+        <h1>Golf</h1>
+        <p>I love to golf, while I may not be good, I am definetely getting into it!</p>
+        <p>Check out these cool links related to golfing:</p>
+    </section>
+
+    <section id="tech" class="hobby-section">
+        <h1>Technology</h1>
+        <p>I'm constantly learning new things in technology. Here are some cool links:</p>
+        <ul id="tech-links"></ul>
+    </section> -->
+
+    <script>
+        window.onload = function() {
+            // Add golf facts
+            // var golfFacts = [
+            //     'Fact 1',
+            //     'Fact 2',
+            //     'Fact 3'
+            // ];
+            // var golfFactsList = document.getElementById('golf-facts');
+            // golfFacts.forEach(function(fact) {
+            //     var listItem = document.createElement('li');
+            //     listItem.textContent = fact;
+            //     golfFactsList.appendChild(listItem);
+            // });
+
+            // Add tech links
+            // var techLinks = [
+            //     { text: 'Link 1', href: '#' },
+            //     { text: 'Link 2', href: '#' },
+            //     { text: 'Link 3', href: '#' }
+            // ];
+            // var techLinksList = document.getElementById('tech-links');
+            // techLinks.forEach(function(linkInfo) {
+            //     var listItem = document.createElement('li');
+            //     var link = document.createElement('a');
+            //     link.textContent = linkInfo.text;
+            //     link.href = linkInfo.href;
+            //     listItem.appendChild(link);
+            //     techLinksList.appendChild(listItem);
+            // });
+
+            // Scroll reveal effect
+            var sections = document.querySelectorAll('.hobby-section');
+            var revealSection = function() {
+                var revealPoint = 150;
+                sections.forEach(function(section) {
+                    var sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight - revealPoint) {
+                        section.classList.add('fadeIn');
+                    }
+                });
+            };
+
+            // Fade in images
+            var images = document.querySelectorAll('.hobby-section img');
+            images.forEach(function(image, index) {
+                setTimeout(function() {
+                    image.classList.add('show');
+                }, index * 500);  // delay increases by 500ms for each image
+            });
+
+            window.addEventListener('scroll', revealSection);
+            revealSection();
+        }
+    </script>
+</body>
+</html>
